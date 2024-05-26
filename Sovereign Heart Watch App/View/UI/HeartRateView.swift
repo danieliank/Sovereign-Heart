@@ -7,7 +7,7 @@
 import SwiftUI
 
 struct HeartRateView: View {
-    @ObservedObject var imageModel = ImageModel()
+    @ObservedObject private var imageModel = ImageModel()
     @ObservedObject private var heartRateManager = HeartRateManager()
     
     @State private var gameOver = false

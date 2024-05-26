@@ -12,6 +12,7 @@ struct PngSequenceView: View {
     let frameDuration: Double
     let width: CGFloat
     let height: CGFloat
+    
     @State private var currentIndex = 0
     
     var body: some View {

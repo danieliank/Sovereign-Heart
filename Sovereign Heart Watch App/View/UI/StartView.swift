@@ -23,10 +23,10 @@ struct StartView: View {
                     Image("StartButton")
                         .resizable()
                         .frame(width: 128, height: 128)
-                        .scaleEffect(isAnimating ? 1.2 : 1.0) // Add scaling effect
-                        .animation(Animation.easeInOut(duration: 1).repeatForever(autoreverses: true), value: isAnimating) // Add animation
+                        .scaleEffect(isAnimating ? 1.2 : 1.0)
+                        .animation(Animation.easeInOut(duration: 1).repeatForever(autoreverses: true), value: isAnimating)
                         .onAppear {
-                            self.isAnimating = true // Start animation on appear
+                            self.isAnimating = true
                         }
                 }
                 .buttonStyle(PlainButtonStyle())

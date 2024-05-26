@@ -28,9 +28,6 @@ class HeartRateManager: ObservableObject {
         healthStore.requestAuthorization(toShare: nil, read: typesToRead) { (success, error) in
             if success {
                 self.startHeartRateDetection()
-            } else {
-                // Handle authorization error
-                print("Failed to request authorization for heart rate")
             }
         }
     }
@@ -42,8 +39,6 @@ class HeartRateManager: ObservableObject {
         
         let query = HKObserverQuery(sampleType: heartRateType, predicate: nil) { (query, completionHandler, error) in
             if let error = error {
-                // Handle query error
-                print("Failed to query heart rate: \(error.localizedDescription)")
                 return
             }
             
@@ -58,11 +53,6 @@ class HeartRateManager: ObservableObject {
         
         healthStore.execute(query)
         healthStore.enableBackgroundDelivery(for: heartRateType, frequency: .immediate) { (success, error) in
-            if success {
-                print("Enabled background delivery for heart rate")
-            } else {
-                print("Failed to enable background delivery for heart rate")
-            }
         }
     }
     
@@ -74,7 +64,6 @@ class HeartRateManager: ObservableObject {
         let sortDescriptor = NSSortDescriptor(key: HKSampleSortIdentifierStartDate, ascending: false)
         let query = HKSampleQuery(sampleType: heartRateType, predicate: nil, limit: 1, sortDescriptors: [sortDescriptor]) { (query, samples, error) in
             if let error = error {
-                print("Failed to query heart rate: \(error.localizedDescription)")
                 completion(0.0)
                 return
             }

@@ -32,7 +32,8 @@ struct HeartRateView: View {
                                 .frame(width: 30, height: 30)
                                 .offset(x: 4)
                             Text("\(String(format: "%.0f", heartRateManager.heartRate))")
-                                .font(.custom("PixelifySans", size: 20))
+                                .font(.custom("PixelifySans-Regular", size: 20))
+                                .foregroundColor(heartRateManager.heartRate > 100 ? .green5 : .red5)
                         }
                         .offset(x: -12, y: 8)
                         PngSequenceView(imageNames: imageModel.char, frameDuration: 0.2, width: 75, height: 75)

@@ -15,10 +15,7 @@ struct HeartRateView: View {
     var body: some View {
         NavigationView {
             ZStack {
-                Image("Background")
-                    .resizable()
-                    .aspectRatio(contentMode: .fill)
-                    .edgesIgnoringSafeArea(.all)
+                BackgroundView(offsetY: -500)
                 ZStack {
                     PngSequenceView(imageNames: imageModel.zombie, frameDuration: 0.2, width: 75, height: 75)
                         .offset(x: imageModel.zombieOffset, y: 0)

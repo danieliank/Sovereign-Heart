@@ -19,6 +19,7 @@
 		6A37B53E2BF78624000FA4B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A37B53D2BF78624000FA4B0 /* Assets.xcassets */; };
 		6A37B5412BF78624000FA4B0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A37B5402BF78624000FA4B0 /* Preview Assets.xcassets */; };
 		6A37EC652C008ECD00A0971E /* GameOverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A37EC642C008ECD00A0971E /* GameOverView.swift */; };
+		6A74A13F2CB7E72000857F7B /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A74A13E2CB7E71E00857F7B /* BackgroundView.swift */; };
 		6AC78CA52BFA29A30093A9A1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AC78CA42BFA29A30093A9A1 /* ContentView.swift */; };
 		6AEA66EF2BFB4BE50032FC03 /* HeartRateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AEA66EE2BFB4BE50032FC03 /* HeartRateManager.swift */; };
 /* End PBXBuildFile section */
@@ -61,6 +62,7 @@
 		6A37B5402BF78624000FA4B0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		6A37B54B2BF78634000FA4B0 /* Sovereign Heart Watch App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Sovereign Heart Watch App.entitlements"; sourceTree = "<group>"; };
 		6A37EC642C008ECD00A0971E /* GameOverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOverView.swift; sourceTree = "<group>"; };
+		6A74A13E2CB7E71E00857F7B /* BackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
 		6AC78CA42BFA29A30093A9A1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		6AEA66EE2BFB4BE50032FC03 /* HeartRateManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartRateManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -87,6 +89,7 @@
 		6A02F1242C034490003B8820 /* Component */ = {
 			isa = PBXGroup;
 			children = (
+				6A74A13E2CB7E71E00857F7B /* BackgroundView.swift */,
 				6A1417312BFC571F00DDC848 /* PngSequenceComponentView.swift */,
 			);
 			path = Component;
@@ -278,6 +281,7 @@
 				6A37B53A2BF78624000FA4B0 /* Sovereign_HeartApp.swift in Sources */,
 				6A37EC652C008ECD00A0971E /* GameOverView.swift in Sources */,
 				6A0AB5322BFF85670042F2F8 /* ImageModel.swift in Sources */,
+				6A74A13F2CB7E72000857F7B /* BackgroundView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

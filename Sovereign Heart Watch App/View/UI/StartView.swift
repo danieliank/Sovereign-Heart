@@ -13,12 +13,8 @@ struct StartView: View {
     var body: some View {
         NavigationView {
             ZStack {
-                Image("Background")
-                    .resizable()
-                    .aspectRatio(contentMode: .fill)
-                    .edgesIgnoringSafeArea(.all)
+                BackgroundView()
                     .blur(radius: 2)
-                
                 NavigationLink(destination: HeartRateView().navigationBarBackButtonHidden(true)) {
                     Image("StartButton")
                         .resizable()

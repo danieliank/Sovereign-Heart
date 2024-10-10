@@ -6,19 +6,15 @@
 //
 
 import SwiftUI
-
+//TODO: buat struct jdi biar lgsg panggil
 struct GameOverView: View {
     @State private var isAnimating = false
 
     var body: some View {
         NavigationView {
             ZStack {
-                Image("Background")
-                    .resizable()
-                    .aspectRatio(contentMode: .fill)
-                    .edgesIgnoringSafeArea(.all)
+                BackgroundView()
                     .blur(radius: 2)
-                
                 NavigationLink(destination: HeartRateView().navigationBarBackButtonHidden(true)) {
                     Image("RestartButton")
                         .resizable()

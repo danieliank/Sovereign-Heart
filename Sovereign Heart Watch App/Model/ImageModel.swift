@@ -9,6 +9,7 @@ import Foundation
 
 class ImageModel: ObservableObject {
     @Published var charIndex = 0
+    //TODO: Loopingin biar gak jorok
     let char = ["Char1", "Char2", "Char3", "Char4", "Char5", "Char6", "Char7", "Char8", "Char9", "Char10", "Char11", "Char12", "Char13", "Char14", "Char15", "Char16", "Char17", "Char18"]
     
     @Published var zombieIndex = 0

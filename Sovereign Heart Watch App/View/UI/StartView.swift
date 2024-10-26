@@ -15,6 +15,7 @@ struct StartView: View {
             ZStack {
                 BackgroundView()
                     .blur(radius: 2)
+                    .offset(y: -300)
                 NavigationLink(destination: HeartRateView().navigationBarBackButtonHidden(true)) {
                     Image("StartButton")
                         .resizable()

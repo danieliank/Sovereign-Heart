@@ -15,6 +15,7 @@ struct GameOverView: View {
             ZStack {
                 BackgroundView()
                     .blur(radius: 2)
+                    .offset(y: -100)
                 NavigationLink(destination: HeartRateView().navigationBarBackButtonHidden(true)) {
                     Image("RestartButton")
                         .resizable()
